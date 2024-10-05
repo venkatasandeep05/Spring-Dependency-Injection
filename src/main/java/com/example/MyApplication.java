@@ -3,6 +3,7 @@ package com.example;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.FileSystemResource;
 
@@ -40,6 +41,12 @@ public class MyApplication
         //Dependency Injection using Autowired annotation
         Rikshaw rikshaw=(Rikshaw) context.getBean("rikshaw");
         System.out.println(rikshaw);
+
+        //Dependency Injection using Pure Annotation based configuration
+        ApplicationContext applicationContext=new AnnotationConfigApplicationContext(AppConfig.class);
+        Samsung samsung=(Samsung) applicationContext.getBean(Samsung.class);
+        samsung.config();
+
 
 
     }
