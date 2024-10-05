@@ -23,5 +23,20 @@ public class MyApplication
         ApplicationContext context=new ClassPathXmlApplicationContext("spring.xml");
         Lorry lorry=(Lorry) context.getBean("lorry");
         lorry.drive();
+
+        //Instance variable intilization using setter method for xml based configuration
+        Cycle cycle=(Cycle) context.getBean("cycle");
+        System.out.println(cycle);
+
+        //Instance Variable intilization using constructor for xml based configuration
+        Auto auto=(Auto) context.getBean("auto");
+        System.out.println(auto);
+
+        //Using Application Context to perform Dependency Injection using annotation based configuration instead of XML
+
+        Train train= (Train) context.getBean("train");   //id for annotation based configuration is decaptilized of class name
+        train.drive();
+
+
     }
 }
