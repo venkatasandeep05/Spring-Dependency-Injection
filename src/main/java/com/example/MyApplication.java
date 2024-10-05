@@ -23,5 +23,10 @@ public class MyApplication
         ApplicationContext context=new ClassPathXmlApplicationContext("spring.xml");
         Lorry lorry=(Lorry) context.getBean("lorry");
         lorry.drive();
+
+        //Using Application Context to perform Dependency Injection using annotation based configuration instead of XML
+
+        Train train= (Train) context.getBean("train");   //id for annotation based configuration is decaptilized of class name
+        train.drive();
     }
 }

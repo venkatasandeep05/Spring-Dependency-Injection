@@ -9,5 +9,5 @@
 
     <bean id="car" class="com.example.Car"/>
     <bean id="lorry" class="com.example.Lorry"/>
-
+    <context:component-scan base-package="com.example"></context:component-scan>
 </beans>

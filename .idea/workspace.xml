@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d24fbfe-066b-45e2-96db-d1f547f02f45" name="Changes" comment="Dependency Injection using Application context and bean factory">
+    <list default="true" id="8d24fbfe-066b-45e2-96db-d1f547f02f45" name="Changes" comment="updated bean definition to support annotation based configuration">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Train.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,11 +92,19 @@
       <option name="project" value="LOCAL" />
       <updated>1727850625134</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updated bean definition to support annotation based configuration">
+      <created>1728104241979</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728104241979</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dependency Injection using Application context and bean factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dependency Injection using Application context and bean factory" />
+    <MESSAGE value="updated bean definition to support annotation based configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated bean definition to support annotation based configuration" />
   </component>
 </project>
