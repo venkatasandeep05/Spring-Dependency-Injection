@@ -37,6 +37,10 @@ public class MyApplication
         Train train= (Train) context.getBean("train");   //id for annotation based configuration is decaptilized of class name
         train.drive();
 
+        //Dependency Injection using Autowired annotation
+        Rikshaw rikshaw=(Rikshaw) context.getBean("rikshaw");
+        System.out.println(rikshaw);
+
 
     }
 }
