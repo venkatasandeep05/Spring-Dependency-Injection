@@ -11,6 +11,17 @@
     <bean id="car" class="com.example.Car"/>
     <bean id="lorry" class="com.example.Lorry"/>
 
+<!--    Using property tag to set bean properties-->
+    <bean id="cycle" class="com.example.Cycle">
+        <property name="brand" value="Ranger"></property>
+    </bean>
+
+<!--    Using Construtor injection for the beans created using xml based configuration-->
+
+    <bean id="auto" class="com.example.Auto">
+       <constructor-arg value="Bajaj"></constructor-arg>
+        <constructor-arg value="Hyderabad"></constructor-arg>
+    </bean>
 <!--   this component scan in base package helps spring to create beans for all the classes which has @component annotation .-->
     <context:component-scan base-package="com.example"></context:component-scan>
 

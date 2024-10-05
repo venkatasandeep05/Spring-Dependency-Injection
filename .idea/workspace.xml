@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d24fbfe-066b-45e2-96db-d1f547f02f45" name="Changes" comment="getting train dependency using annotation based configuration">
+    <list default="true" id="8d24fbfe-066b-45e2-96db-d1f547f02f45" name="Changes" comment="added comments">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Auto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Cycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/MyApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,13 +107,21 @@
       <option name="project" value="LOCAL" />
       <updated>1728104822708</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added comments">
+      <created>1728105079595</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728105079595</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dependency Injection using Application context and bean factory" />
     <MESSAGE value="updated bean definition to support annotation based configuration" />
     <MESSAGE value="getting train dependency using annotation based configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="getting train dependency using annotation based configuration" />
+    <MESSAGE value="added comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comments" />
   </component>
 </project>
