@@ -7,7 +7,11 @@
 		http://www.springframework.org/schema/context
 		https://www.springframework.org/schema/context/spring-context.xsd">
 
+<!--    this beans tags are used to create beans for DI-->
     <bean id="car" class="com.example.Car"/>
     <bean id="lorry" class="com.example.Lorry"/>
+
+<!--   this component scan in base package helps spring to create beans for all the classes which has @component annotation .-->
     <context:component-scan base-package="com.example"></context:component-scan>
+
 </beans>
