@@ -1,5 +1,6 @@
 package com.example;
 
+import com.example.temp.Aeroplane;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
@@ -33,10 +34,15 @@ public class MyApplication
         Auto auto=(Auto) context.getBean("auto");
         System.out.println(auto);
 
-        //Using Application Context to perform Dependency Injection using annotation based configuration instead of XML
+        //Using Application Context to perform Dependency Injection using component scan tag in spring.xml and @component annotation
 
         Train train= (Train) context.getBean("train");   //id for annotation based configuration is decaptilized of class name
         train.drive();
+
+        //Depenedency Injection using component scan tag in spring.xml file in a sub package
+
+        Aeroplane aeroplane=(Aeroplane) context.getBean("aeroplane");
+        aeroplane.drive();
 
         //Dependency Injection using Autowired annotation
         Rikshaw rikshaw=(Rikshaw) context.getBean("rikshaw");
@@ -46,8 +52,5 @@ public class MyApplication
         ApplicationContext applicationContext=new AnnotationConfigApplicationContext(AppConfig.class);
         Samsung samsung=(Samsung) applicationContext.getBean(Samsung.class);
         samsung.config();
-
-
-
     }
 }
